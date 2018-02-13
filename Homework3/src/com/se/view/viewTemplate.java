@@ -10,5 +10,12 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public abstract class viewTemplate extends Application {
-
+	Button button;
+	
+	public viewTemplate() {
+		launch();
+	}
+	
+	@Override
+	public  abstract void start(Stage primaryStage) throws Exception; 
 }
