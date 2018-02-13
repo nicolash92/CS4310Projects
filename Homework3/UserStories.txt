@@ -1,1 +1,7 @@
 User Stories:
+
+1.	As a user, I want a to be notified every 20 mins; so that I can view log in hours on my pc.
+
+2.	As a coach, I want to view a countdown; so that I can tell the next trainee when to go.
+
+3.	As an employee, I want to know when time is up; so that I can tell when it’s time to go to work.
