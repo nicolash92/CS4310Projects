@@ -10,14 +10,17 @@ import javafx.scene.control.*;
 public class uiController extends Application{
 	Stage window;
 	menu menu; 
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
 	
 	@Override
 	public void start(Stage stage) throws Exception{
+		String title = "Reminder";
 		
-		int result = new menu().display("Reminder");
+		int result = new menu().menuStart(title);
+		int time = new menu().display(title);
 
 		switch(result) {
 		case 1:
@@ -26,8 +29,7 @@ public class uiController extends Application{
 			break;
 			
 		case 2:
-			int vaule = new countdown().display("Timer");
-			System.out.print(vaule);
+			new countdown().display("Timer");
 			break;
 			
 		}
