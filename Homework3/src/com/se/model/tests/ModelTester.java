@@ -8,7 +8,7 @@ import com.se.model.reminders.TextReminder;
 import com.se.model.reminders.TimedReminder;
 
 public class ModelTester {
-
+	/*
 	public static void main(String[] args) {
 		ReminderList rl = ReminderList.getInstance();
 		rl.addReminder(TextReminder.getInstance("Need to get Groceries"));
@@ -29,4 +29,5 @@ public class ModelTester {
 			System.out.println(tr.toString());
 		}
 	}
+	*/
 }
