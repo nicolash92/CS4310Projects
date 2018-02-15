@@ -8,8 +8,10 @@ public class viewReminders extends absReminder {
 
 	@Override
 	public String add(Scanner list) {
+		setViewTime(false);
+		
 		String result = new String();
-		int hour, min;
+		String hour, min;
 		
 		System.out.print("+: ");
 		result = list.nextLine();
@@ -20,11 +22,19 @@ public class viewReminders extends absReminder {
 		if(eventTime == 'Y') {
 			setViewTime(true);
 			System.out.print("Hour: ");
-			hour = list.nextInt();
+			hour = list.next();
+			
+			if(hour.length() < 2)
+				hour = "0" + hour;
 			
 			System.out.print("Min: ");
-			min = list.nextInt();
-			result = String.valueOf(hour) + String.valueOf(min) + result;
+			min = list.next();
+			
+			if(min.length() < 2)
+				min = "0" + min;
+			
+			
+			result = hour + min + result;
 		}
 		
 		return result;

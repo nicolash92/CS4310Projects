@@ -33,21 +33,22 @@ public class conReminder {
 						 model.addReminder(TimedReminder.getInstance(hour, min, list));
 						 
 					 }
-					 
-					 model.addReminder(TextReminder.getInstance(list));
+					 else 
+						 model.addReminder(TextReminder.getInstance(list));
 				 }
 				 break;
 				 
 			 case 2:
-				 List<Reminder> textReminders = (model.getReminders(Reminder.TYPE.TEXT));
-					for(Reminder tr: textReminders) {
-						System.out.println(tr.toString());
-					}
+				 	List<Reminder> textReminders = (model.getReminders(Reminder.TYPE.TEXT));
+				 		for(Reminder tr: textReminders) {
+				 			System.out.println(tr.toString());
+				 		}
 					
-				List<Reminder> timedReminders = (model.getReminders(Reminder.TYPE.TIMED));
-					for(Reminder tr: timedReminders) {
-						System.out.println(tr.toString());
-					}
+				 	List<Reminder> timedReminders = (model.getReminders(Reminder.TYPE.TIMED));
+						for(Reminder tr: timedReminders) {
+			 				System.out.println(tr.toString());
+						}		
+				 	
 				 break;
 			 }
 		}while(result != -1);
