@@ -9,7 +9,7 @@ public class View extends Views{
 	
 	@Override
 	public int menu(Scanner in) {
-		System.out.print("ADD[1], Display[2], Remove[3], Quit[-1]: ");
+		System.out.print("ADD[1], Display[2], Quit[-1]: ");
 		return in.nextInt();
 	}
 
@@ -54,6 +54,11 @@ public class View extends Views{
 	//How many items you will like to add to the list of reminders
 	public int numReminders(Scanner in) {
 		System.out.print("Number of items: ");
+		return in.nextInt();
+	}
+	
+	public int reminderIndex(Scanner in) {
+		System.out.print("Enter reminder index: ");
 		return in.nextInt();
 	}
 

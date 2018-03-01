@@ -57,24 +57,20 @@ public class controller {
 				List<Reminder> textReminders;
 				List<Reminder> timeReminders;
 				
+				int i=0;
 				//date
 				dateReminders = model.getReminders(TYPE.DATE_TIME);
-				for(Reminder rim: dateReminders)
-					System.out.println(rim.toString());
+				for(Reminder rim: dateReminders) 
+					System.out.println("Reminder "+ i++  +"- " +rim.toString());
 				//text
 				textReminders = model.getReminders(TYPE.TEXT);
 				for(Reminder rim: textReminders)
-					System.out.println(rim.toString());
+					System.out.println("Reminder "+ i++  +"- " +rim.toString());
 				//time
 				timeReminders = model.getReminders(TYPE.TIMED);
 				for(Reminder rim: timeReminders)
-					System.out.println(rim.toString());
+					System.out.println("Reminder "+ i++  +"- " +rim.toString());
 
-				break;
-				
-			case 3:
-				//Remove Area
-				
 				break;
 			}
 		}while(result != -1);
