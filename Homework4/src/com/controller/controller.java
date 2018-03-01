@@ -57,7 +57,7 @@ public class controller {
 				List<Reminder> textReminders;
 				List<Reminder> timeReminders;
 				
-				int i=0;
+				int i=1;
 				//date
 				dateReminders = model.getReminders(TYPE.DATE_TIME);
 				for(Reminder rim: dateReminders) 
